@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://cyr7ivqjaaguj"]
 
-[ext_resource type="Script" path="res://src/enemies/baseballguy/Basebakkguy.gd" id="1_jlt3p"]
+[ext_resource type="Script" path="res://src/enemies/baseballguy/Baseballguy.gd" id="1_jlt3p"]
 [ext_resource type="Texture2D" uid="uid://csl1eineprqup" path="res://assets/images/enemies/Baseballguy/hurt/hurt_frame_0.png" id="2_56bxp"]
 [ext_resource type="Texture2D" uid="uid://cn5ld8sucadgy" path="res://assets/images/enemies/Baseballguy/hurt/hurt_frame_1.png" id="3_yvncl"]
 [ext_resource type="Texture2D" uid="uid://btxukwrkruvwi" path="res://assets/images/enemies/Baseballguy/walk/walk_frame_0.png" id="4_hhwrr"]

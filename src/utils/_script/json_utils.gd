@@ -20,10 +20,11 @@ func test():
 	
 	var json_data = JSON.stringify(all_data)
 	var file_access = FileAccess.open(ENEMY_INFO,FileAccess.WRITE)
+	print(json_data)
 	file_access.store_line(json_data)
 	file_access.close()
 	
-func test_losd() -> void:
+func test_load() -> void:
 	if not FileAccess.file_exists(ENEMY_INFO):
 		return
 	
@@ -32,4 +33,27 @@ func test_losd() -> void:
 	
 	var loaded_data: Dictionary = JSON.parse_string(json_data)
 	
-	print(loaded_data["Window Events"])
+	print(loaded_data)
+
+#将json中内容转化为字典
+func json_to_dict(path: String):
+	
+	var file_access = FileAccess.get_file_as_string(path)
+	var parse_result: Dictionary = JSON.parse_string(file_access)
+	
+	var dict = parse_result
+	
+	return dict
+	
+#为字典添加字符串
+func add_string_to_dict(original_dict: Dictionary, string_to_add: String)-> Dictionary:
+	# 创建一个新的字典
+	var new_dict = {}
+	# 遍历原始字典，并创建一个新字典，其中每个value都添加了一个字符串
+	for key in original_dict:
+		new_dict[key] = string_to_add + original_dict[key]
+	
+	return new_dict
+
+
+	
