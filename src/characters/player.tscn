@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bu8yfa8jfvuis"]
+
+[ext_resource type="Script" path="res://src/characters/player.gd" id="1_giy2e"]
+[ext_resource type="PackedScene" uid="uid://b1dv2b572vlsi" path="res://src/characters/biker/biker.tscn" id="2_5oe22"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lmxrf"]
+radius = 8.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_giy2e")
+
+[node name="Biker" parent="." instance=ExtResource("2_5oe22")]
+
+[node name="HurtBox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+position = Vector2(-2, 3)
+shape = SubResource("CircleShape2D_lmxrf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 3)
+shape = SubResource("CircleShape2D_lmxrf")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://da7xbj5fgboy3"]
 
-[ext_resource type="Script" path="res://src/enemies/_scenes/baseballguy_mob.gd" id="1_13pgp"]
+[ext_resource type="Script" path="res://src/enemies/_script/BaseballguyMob.gd" id="1_toa0g"]
 [ext_resource type="PackedScene" uid="uid://cyr7ivqjaaguj" path="res://src/enemies/baseballguy/baseballguy.tscn" id="2_agtva"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_03nin"]
@@ -8,7 +8,7 @@ radius = 16.0
 height = 60.0
 
 [node name="Baseballguy_Mob" type="CharacterBody2D"]
-script = ExtResource("1_13pgp")
+script = ExtResource("1_toa0g")
 
 [node name="Baseballguy" parent="." instance=ExtResource("2_agtva")]
 
