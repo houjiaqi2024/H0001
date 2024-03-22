@@ -10,8 +10,10 @@ radius = 8.0
 script = ExtResource("1_giy2e")
 
 [node name="Biker" parent="." instance=ExtResource("2_5oe22")]
+unique_name_in_owner = true
 
 [node name="HurtBox" type="Area2D" parent="."]
+unique_name_in_owner = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
 position = Vector2(-2, 3)
