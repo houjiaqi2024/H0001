@@ -4,9 +4,9 @@ extends CharacterBody2D
 @onready var player = get_node("/root/Game/Player")
 @onready var mob = new()
 
-const DEATH_SCENE = preload("res://effects/smoke_explosion/smoke_explosion.tscn")
+const DEATH_SCENE = preload("res://smoke_explosion.tscn")
 const DROPS = {
-	"HEALTH": preload("res://items/pickup_health/HealthPickup.tscn"),
+	"HEALTH": preload("res://smoke_explosion.tscn"),
 	"HEALTH_CHANCE": 0.05
 }
 
